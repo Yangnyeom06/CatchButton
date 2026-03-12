@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            label1 = new Label();
             button2 = new Button();
             SuspendLayout();
             // 
@@ -42,15 +41,6 @@
             button1.Text = "나를 잡아봐";
             button1.Click += button1_Click;
             button1.MouseEnter += button1_MouseEnter;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(384, 202);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 20);
-            label1.TabIndex = 1;
-            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button2
             // 
@@ -68,18 +58,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
-            Controls.Add(label1);
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
-        private Label label1;
         private Button button2;
     }
 }

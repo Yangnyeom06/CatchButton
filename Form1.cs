@@ -19,9 +19,9 @@ namespace Winform2
             life -= 1;
             if (life <= 0)
             {
-                label1.Text = "Game Over";
                 button1.Enabled = false;
                 button2.Enabled = true;
+                MessageBox.Show("Game Over");
             }
             Random rd = new Random();
             int maxX = this.ClientSize.Width - button1.Width;
@@ -35,7 +35,7 @@ namespace Winform2
 
         private void button1_Click(object sender, EventArgs e) // 나를 잡아봐 버튼 클릭시 이벤트
         {
-            label1.Text = "축하합니다~!";
+            MessageBox.Show("축하합니다");
             score += 100;
 
             Random rd = new Random();
@@ -53,10 +53,6 @@ namespace Winform2
             InitGame();
         }
 
-        private void button1_MouseMove(object sender, MouseEventArgs e) // 버튼을 클릭할때 label1 안보이게
-        {
-            label1.Text = "";
-        }
 
         public void InitGame() // 게임 초기 시작 및 재시작
         {
@@ -64,7 +60,6 @@ namespace Winform2
             life = 20;
             button1.Enabled = true;
             button2.Enabled = false;
-            label1.Text = "";
 
             Random rd = new Random();
             int maxX = this.ClientSize.Width - button1.Width;
