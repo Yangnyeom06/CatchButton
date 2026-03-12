@@ -60,6 +60,7 @@
             button2.TabIndex = 2;
             button2.Text = "다시 시작";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 

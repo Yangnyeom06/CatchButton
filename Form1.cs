@@ -73,6 +73,5 @@ namespace Winform2
             button1.Location = new Point(nextX, nextY);
             this.Text = $"버튼위치: ({nextX}, {nextY}), 점수 : {score}";
         }
-
     }
 }
