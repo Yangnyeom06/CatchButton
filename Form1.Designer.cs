@@ -41,7 +41,6 @@
             button1.Text = "나를 잡아봐";
             button1.Click += button1_Click;
             button1.MouseEnter += button1_MouseEnter;
-            button1.MouseMove += button1_MouseMove;
             // 
             // label1
             // 
