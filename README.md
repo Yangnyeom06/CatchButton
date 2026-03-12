@@ -15,4 +15,5 @@
 <img width="802" height="489" alt="image" src="https://github.com/user-attachments/assets/f886e417-2c7d-4611-8dcd-cd48935250ec" />
 
 4단계 코드의 실행 스크린샷
-<img width="802" height="488" alt="image" src="https://github.com/user-attachments/assets/e9669d5c-accf-4da6-a039-a6efebe8be68" />
+<img width="802" height="488" alt="image" src="https://github.com/user-attachments/assets/e936e563-e1e7-4d2f-a4ff-9ea97ac6ad07" />
+
