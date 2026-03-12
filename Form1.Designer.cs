@@ -30,6 +30,7 @@
         {
             button1 = new Button();
             label1 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -51,11 +52,21 @@
             label1.TabIndex = 1;
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // button2
+            // 
+            button2.Location = new Point(12, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(90, 32);
+            button2.TabIndex = 2;
+            button2.Text = "다시 시작";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "Form1";
@@ -68,5 +79,6 @@
 
         private Button button1;
         private Label label1;
+        private Button button2;
     }
 }
