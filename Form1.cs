@@ -10,10 +10,10 @@ namespace Winform2
         public Form1()
         {
             InitializeComponent();
-            InitGame();
+            InitGame(); // 초기 시작
         }
 
-        private void button1_MouseEnter(object sender, EventArgs e)
+        private void button1_MouseEnter(object sender, EventArgs e) // 나를 잡아봐 버튼에 마우스가 들어올 때 이벤트
         {
             score -= 10;
             life -= 1;
@@ -33,7 +33,7 @@ namespace Winform2
 
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // 나를 잡아봐 버튼 클릭시 이벤트
         {
             label1.Text = "축하합니다~!";
             score += 100;
@@ -48,17 +48,17 @@ namespace Winform2
             this.Text = $"버튼위치: ({nextX}, {nextY}), 점수 : {score}";
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // 다시하기 버튼 클릭시 재시작
         {
             InitGame();
         }
 
-        private void button1_MouseMove(object sender, MouseEventArgs e)
+        private void button1_MouseMove(object sender, MouseEventArgs e) // 버튼을 클릭할때 label1 안보이게
         {
             label1.Text = "";
         }
 
-        public void InitGame()
+        public void InitGame() // 게임 초기 시작 및 재시작
         {
             score = 1000;
             life = 20;
